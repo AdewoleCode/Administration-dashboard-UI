@@ -3,7 +3,7 @@ import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import New from "./pages/newPage/New";
 import Single from "./pages/singleUser/Single";
-import List from "./pages/usersList/List";
+import List from "./pages/list/List";
 
 function App() {
   return (
