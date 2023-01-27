@@ -6,14 +6,15 @@ import Single from "./pages/singleUser/Single";
 import List from "./pages/list/List";
 import { userInputs, productInputs } from "./formSource";
 import "../src/style/dark.scss"
-import { useState } from "react";
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModeContext";
 
 function App() {
-  const [dark, setDark] = useState(false)
+  const {darkMode} = useContext(DarkModeContext) 
 
 
   return (
-    <div className={dark ? "app dark" : "app"}>
+    <div className={darkMode ? "app dark" : "app"}>
 
       <BrowserRouter>
         <Routes>
